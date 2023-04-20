@@ -43,7 +43,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_PRIVATE_KEY }}
-          port: ${{ secrets.EC2_SSH_PORT }}
+          port: ${{ secrets.EC2_PORT }}
           script: |
             docker pull wonohchoi/deploy-test:latest
             docker run ${{ secrets.DOCKER_HUB_IMAGE_ID  }}
