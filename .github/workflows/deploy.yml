@@ -49,4 +49,4 @@ jobs:
           script: |
             docker pull wonohchoi/deploy-test:nginx
             docker pull wonohchoi/deploy-test:nextjs
-            docker run ${{ secrets.DOCKER_HUB_IMAGE_ID  }}
+            docker-compose up
