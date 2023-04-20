@@ -30,14 +30,19 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
-      - name: Build Docker image
+      - name: Build Docker image nextjs
         uses: docker/build-push-action@v2
         with:
           context: .
           push: true
-          tags: |
-            wonohchoi/deploy-test:nginx
-            wonohchoi/deploy-test:nextjs
+          tags: wonohchoi/deploy-test:nextjs
+
+      - name: Build Docker image nginx
+        uses: docker/build-push-action@v2
+        with:
+          context: ./nginx
+          push: true
+          tags: wonohchoi/deploy-test:nginx
 
       - name: SSH into EC2 instance and pull new Docker image
         uses: appleboy/ssh-action@v0.1.6
