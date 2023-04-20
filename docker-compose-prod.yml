@@ -1,0 +1,10 @@
+version: "3"
+services:
+  nginx:
+    image: wonohchoi/deploy-test:nginx
+    ports:
+      - "80:80"
+  next:
+    image: wonohchoi/deploy-test:nextjs
+    ports:
+      - "3000:3000"
