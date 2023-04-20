@@ -4,6 +4,8 @@ services:
     image: wonohchoi/deploy-test:nginx
     ports:
       - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
   next:
     image: wonohchoi/deploy-test:nextjs
     ports:
