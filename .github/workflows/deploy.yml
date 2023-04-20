@@ -52,6 +52,6 @@ jobs:
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           port: ${{ secrets.EC2_PORT }}
           script: |
-            docker pull wonohchoi/deploy-test:nginx
             docker pull wonohchoi/deploy-test:nextjs
+            docker pull wonohchoi/deploy-test:nginx
             docker-compose up
