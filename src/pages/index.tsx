@@ -17,7 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            Get started by editing&nbsp; 테스트요1112312312312s
+            Get started by editing&nbsp; 테스트요1112312312312s123123
             <code className={styles.code}>src/pages/index.tsx</code>
           </p>
           <div>
