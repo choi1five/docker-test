@@ -28,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Build next app
-        run: npm build
+        run: npm run build
 
       - name: Make zip file
         run: zip -qq -r ./$GITHUB_SHA.zip . -x "node_modules/*"
