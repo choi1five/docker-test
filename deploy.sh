@@ -7,4 +7,6 @@ sudo npm cache clean --force
 
 sudo rm -rf /home/ubuntu/deploy/node_modules
 
-sudo npm install 
+sudo npm install
+
+sudo pm2 reload all
