@@ -6,7 +6,7 @@ on:
       - develop
 
 env:
-  S3_BUCKET_NAME: weggle-web-client-bucket
+  S3_BUCKET_NAME: weggle-client-bucket
   CODE_DEPLOY_APPLICATION_NAME: weggle-web-client-deploy
   CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: weggle-web-client
 
