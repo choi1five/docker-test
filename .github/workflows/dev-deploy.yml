@@ -30,6 +30,12 @@ jobs:
       - name: Build next app
         run: npm run build
 
+      - name: Create .env file
+        run: |
+          touch .env
+          echo ${{secrets.ENV}} >> .env
+          cat .env
+
       - name: Make zip file
         run: zip -qq -r ./$GITHUB_SHA.zip . -x "node_modules/*"
         shell: bash
