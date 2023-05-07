@@ -5,4 +5,4 @@ cd $REPOSITORY
 
 sudo npm install
 
-sudo pm2 reload weggle
+sudo pm2 reload weggle --update-env
