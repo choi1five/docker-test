@@ -5,4 +5,4 @@ cd $REPOSITORY
 
 sudo npm install
 
-sudo pm2 reload all --update-env
+pm2 reload all --update-env
